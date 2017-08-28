@@ -10,6 +10,10 @@ h3.span {
   letter-spacing: 10rem;
 }
 
+h6 { 
+font-size: 1rem;
+ }
+
 .landing-header {
   background-size: cover;
   min-height: 570px;
@@ -54,7 +58,14 @@ h3.span {
 }
 
 .navbar { 
-background-color: #68AFD8;
+background-color: #00BCD4;
+padding: 0;
+}
+
+.btn, .navbar .navbar-nav > li > a.btn {
+  border-radius: 20px;
+  box-sizing: border-box;
+  border-width: 2px;
 }
 
 .navbar-relative {
@@ -64,12 +75,27 @@ background-color: #68AFD8;
 
 #register-navbar a {
   color: #FFF;
+/*  background-color: #0097A7;
+  border-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;*/
+  border-width: 2px;
+  margin: 15px 3px;
+  padding: 7px 18px;
 }
+
 
 #register-navbar a:hover {
   color: #FFF;
-  background-color: #1A8CBC;
+  background-color: #0097A7;
   border-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border-width: 2px;
+  margin: 15px 3px;
+  padding: 7px 18px;
+}
+  
 }
 
 .register-background {
@@ -103,7 +129,7 @@ background-color: #68AFD8;
 
 .register-footer {
   bottom: 20px;
-  color: #1A8CBC;
+  color: #0097A7;
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -111,18 +137,19 @@ background-color: #68AFD8;
 
 
 .register-card {
-  background-color: #68AFD8;
+  background-color: #00BCD4;
   border-radius: 8px;
-  border: 1px solid #1A8CBC;
+  border: 1px solid #0097A7;
   color: #fff;
   max-width: 350px;
-  margin: 0px 0 70px;
+  margin: -15px 0 70px;
   min-height: 400px;
   padding: 30px;
 }
 
 .register-card label {
   margin-top: 15px;
+  font-size: 1rem;
 }
 
 .register-card img {
@@ -136,14 +163,13 @@ background-color: #68AFD8;
   letter-spacing: .5rem;
 }
 
-
 .register-card .btn {
   margin-top: 30px;
 }
 
 .register-card .btn:active {
 /*  margin-top: 30px;*/
-  background-color: #1A8CBC;
+  background-color: #0097A7;
   border-color: #fff;
 
 }
@@ -212,25 +238,26 @@ background-color: #68AFD8;
 
 .btn-danger {
   color: #fff;
-  background-color: #A1CEEC;
-  border-color: #F0F2F8;
+  background-color: #0097A7;
+  border-color: #FFF;
 }
 
 .btn-danger:hover { 
-  background-color: #1A8CBC;
-  border-color: #fff;
+  background-color: #E3F6F4;
+  border-color: #0097A7;
+  color: #00BCD4;
 }
 
 .btn-danger:active { 
-  background-color: #1A8CBC;
-  border-color: #fff;
-  border-color: #F0F2F8;
+  background-color: #0097A7;
+  border-color: #0097A7;
+  color: #00BCD4;
 }
 
 .btn-danger:focus { 
-  background-color: #1A8CBC;
-  border-color: #fff;
-  border-color: #F0F2F8;
+  background-color: #0097A7;
+  border-color: #0097A7;
+  color: #00BCD4;
 }
 
 .entry { 
@@ -241,5 +268,82 @@ background-color: #68AFD8;
   color: #fff; 
   min-width: 50%;
   border-color: #F0F2F8;
+  border-radius: 20px;
 }
 
+.btn-group .entry:hover {
+   background-color: #E3F6F4;
+  border-color: #0097A7;
+  color: #00BCD4;
+
+}
+
+
+
+.btn-group-justified>.btn, .btn-group-justified>.btn-group {
+  display: table-cell;
+  float: none;
+  /*width: 1%;*/
+  font-size: 1vw;
+}
+
+@media (max-width: 767px) {
+  
+.navbar-transparent {
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+body {
+  position: relative;
+  font-size: 1vw;
+}
+
+.register-card {
+  background-color: #00BCD4;
+  border-radius: 8px;
+  border: 1px solid #0097A7;
+  color: #fff;
+  max-width: 350px;
+  margin: 65px 0 70px;
+  min-height: 400px;
+  padding: 30px;
+}
+
+.btn-group-justified>.btn, .btn-group-justified>.btn-group {
+  display: table-cell;
+  float: none;
+  /*width: 1%;*/
+  font-size: 2.5vw;
+}
+
+}
+
+@media (max-width: 978px) {
+  .navbar-transparent {
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+body {
+  position: relative;
+  font-size: 1vw;
+}
+
+  .register-card {
+  background-color: #00BCD4;
+  border-radius: 8px;
+  border: 1px solid #0097A7;
+  color: #fff;
+  max-width: 350px;
+  margin: 65px 0 70px;
+  min-height: 400px;
+  padding: 30px;
+}
+
+ .btn-group-justified>.btn, .btn-group-justified>.btn-group {
+  display: table-cell;
+  float: none;
+  /*width: 1%;*/
+  font-size: 2vw;
+}
