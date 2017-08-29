@@ -135,9 +135,9 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-hr {
+/*hr {
   border-color: #F1EAE0;
-}
+}*/
 
 .icon {
   fill: #66615b;
