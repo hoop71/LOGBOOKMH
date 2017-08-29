@@ -11,6 +11,11 @@ h2 {
   font-size: 20px;
 }
 
+h3 { 
+  text-align: center; 
+  color: white;
+}
+
 h3.span { 
   letter-spacing: 10rem;
 }
@@ -584,3 +589,50 @@ body > div > div > div > div > div > div > label {
 font-size: 16px; 
 color: #FFFFFF;
 }
+
+.radio-inline input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.radio-inline input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  opacity: 0.5;
+}
+
+.radio-inline input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.4s ease 0s;
+  opacity: 1;
+}
+
+
+.radio-inline input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+}
+
+.radio-inline input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  
+}
+
+.sug { 
+  border: 1px solid red;
+}
+
+.surg { 
+  text-align: center;
+  width: 100%;
+  height: auto; 
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
+
+.radiolabel { 
+  text-align: center;
+}
+
+
