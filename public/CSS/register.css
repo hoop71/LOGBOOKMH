@@ -536,7 +536,7 @@ input.form-control:focus {
 }
 
 .matt:not(:first-child) { 
-  padding-bottom: 10px; 
+  padding-bottom: 15px; 
 }
 
 input.datepicker.form-control {
@@ -584,6 +584,7 @@ input.datepicker.form-control {
 
 label { 
   color: #ffffff;
+  text-align: center;
 }
 
 body > div > div > div > div > div > div > label { 
@@ -591,42 +592,96 @@ font-size: 16px;
 color: #FFFFFF;
 }
 
+/* First Radio */
+
+.radio-inline { 
+padding: 0; }
+
 .radio-inline input[type=radio] {/* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
   border: 1px solid red;
+
 }
 
 .radio-inline input + img{ /* IMAGE STYLES */
-  cursor:pointer;
+  cursor: pointer;
   border:2px solid transparent;
   opacity: 0.5;
+
 }
 
 .radio-inline input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  transition: opacity 0.4s ease 0s;
+  transition: opacity 0.2s ease 0s;
   opacity: 1;
-}
+  transition: all .2s ease-in-out; 
+  transform: scale(.97, .97); }
+
 
 
 .radio-inline input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+
 }
 
-.radio-inline input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  
+/* Second Radio */
+
+.radio-inline2 { 
+padding: 0; }
+
+.radio-inline2 input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  border: 1px solid red;
+
 }
 
-.sur img { 
+.radio-inline2 input + img{ /* IMAGE STYLES */
+  cursor: pointer;
+  border:2px solid transparent;
+  opacity: 0.5;
+
+}
+
+.radio-inline2 input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  transition: all .2s ease-in-out; 
+  transform: scale(.97, .97); }
+
+
+
+.radio-inline2 input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+
+}
+
+
+/*div.nails.sur img { 
   margin: auto;
   margin-bottom: 1em;
+}*/
+
+div.nails label img { 
+ display: block;
+ margin-left: auto;
+ margin-right: auto; 
 }
 
-.sur2 { 
-  border: 1px solid red; }
+/*.sur2 { 
+  border: 1px solid red; }*/
 
-label.radio-inline { 
-  text-align: center; }
+label.radio-inline, label.radio-inline2 { 
+  padding-top: 15px;
+  border: 1px solid red;
+  border-radius: 15px;
+}
 
 .surg { 
   text-align: center;
@@ -637,17 +692,6 @@ label.radio-inline {
   max-width: 50%;
 }
 
-.hr { 
-  width: 90% !important;
- }
 
 
-
-
-
-/*
-label.radio-inline { 
-  text-align: center;
-}
-*/
 
