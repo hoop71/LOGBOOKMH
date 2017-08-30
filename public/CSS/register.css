@@ -578,11 +578,23 @@ input.datepicker.form-control {
   border-color: #185567;
 }
 
+label:first-child { 
+  padding-top: 5px; 
+}
+
 label { 
   color: #ffffff;
   text-align: center;
-  padding-bottom: 10px;
+  
 }
+
+label:not(:first-child) { 
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+ }
+
+
 
 body > div > div > div > div > div > div > label { 
 font-size: 16px; 
@@ -713,7 +725,7 @@ label.radio-inline, label.radio-inline2 {
 
 .btn-entry:hover { 
   background-color: #FFFFFF;
-  border-color: #185567;
+  border: 1px solid #185567;
   color: #185567;
 
 }
@@ -739,12 +751,12 @@ label.radio-inline, label.radio-inline2 {
   border-radius: 20px;
 }*/
 
-.btn.entry:hover {
+/*.btn.entry:hover {
   background-color: #ffffff;
- /* border-color: #00BCD4;*/
+  border: 1px solid #185567;
   color: #185567;
 
-}
+}*/
 
 /* Progress Bar */
 
@@ -833,7 +845,7 @@ padding: 0; }
 
 .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
   background-color: #7499a3;
-  
+
 }
 
 .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
