@@ -6,7 +6,6 @@ html, body {
   margin-bottom: 0;
 }
 
-
 h2 { 
   font-size: 20px;
 }
@@ -21,10 +20,10 @@ h3.span {
   letter-spacing: 10rem;
 }
 
-
 h6 { 
-font-size: 1rem;
+  font-size: 1rem;
  }
+
 
 .landing-header {
   background-size: cover;
@@ -509,6 +508,9 @@ input.form-control:focus {
   margin-top: 100px;
 }
 
+.panel { 
+  border-bottom: 2px solid #dddddd; }
+
 .jumbtron p {
   font-size: 2em;
   max-width: 90%;
@@ -689,6 +691,10 @@ label.radio-inline, label.radio-inline2 {
   max-width: 50%;
 }
 
+.btn-entrada { 
+  background-color: #ffffff;
+  margin: 50px;
+ }
 
 
 
