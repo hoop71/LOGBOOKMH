@@ -5,7 +5,7 @@
 		<link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/logbookmh.appspot.com/o/Assets%2Ffavicon.png?alt=media&token=01b6dfde-e8b4-4f6a-9b63-68800c29a0d8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		
-		<title>LOGBOOK – Diagnóstico</title>
+		<title>LOGBOOK – Datos</title>
 
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	    <meta name="viewport" content="width=device-width" />
@@ -28,7 +28,9 @@
 <body>
 	<nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="register-navbar">
       <div class="container">
+
         <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
             <span class="sr-only">Toggle navigation</span>
@@ -40,6 +42,7 @@
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
+
         <div class="collapse navbar-collapse" id="navigation-example-2">
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -58,69 +61,41 @@
                 <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
             </li>
            </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-->
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container-->
     </nav>  <!-- /.nav -->
 
-
-	<div>
-    	
-		<div class="container">
+   
+    <div class="container">
 
     		<!-- Header -->
 
 			<div class="panel">
-	  			<h2>Diagnóstico</h2>      
-			</div>
-
-    		<!-- Search Bar -->
-
-			<div class="row">
-			  <div class="col-lg-12 search-pan">
-			    <div class="input-group">
-			      <span class="input-group-btn">
-			        <button class="btn btn-default btn-search" type="button">Buscar!</button>
-			      </span>
-			      <input type="text" class="form-control search" id="searchDiag" name="searchDiag" placeholder="Buscar Diagnóstico...">
-			    </div><!-- /input-group -->
-			  </div><!-- /.col-lg-6 -->
-			 </div> 
-
-			 <div class="panel">
-	  			<h2>Cirugía</h2>      
-			</div>
-
-			 <div class="row">
-				 <div class="col-lg-12 search-pan">
-				    <div class="input-group">
-				      <span class="input-group-btn">
-				        <button class="btn btn-default btn-search" type="button">Buscar!</button>
-				      </span>
-				      <span class="input-group-btn toggle">
-				        <div class="input-group switch-field">  	 
-				        	<input class="btn btn-default btn-search2" type="checkbox" id="simulacion" name="simulacion" value="yes" unchecked/>
-				     		<label for="simulacion">Simulacion</label>
-			        	</div>
-				      </span>
-					
-			    
-	
-
-				     
-				       
-
-
-
-
-
+	  			<h2>Datos Opcionales</h2>      
+			</div>	
 				      
-				      <input type="text" class="form-control search" id="searchCiru" name="searchCiru" placeholder="Buscar Cirugía...">
-			    </div><!-- /input-group -->
-			  </div><!-- /.col-lg-6 -->
-			</div><!-- /.row -->  
+
+			<!-- Data -->
+		<div class="container">
+			<div class="row">
+			  	<div class="data col-sm-12">
+			    Level 1: .col-sm-12
+				   	<div class="row">
+				      <div class="data col-xs-5 col-sm-5">
+				        Level 2: .col-xs-5 .col-sm-5
+				      </div>
+				      <div class="data col-xs-4 col-sm-2">
+				        Level 2: .col-xs-4 .col-sm-2
+				      </div>
+				      <div class="data col-xs-3 col-sm-5">
+				        Level 2: .col-xs-3 .col-sm-5
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
 
 
-		 
 
 			<!-- Progress Bar -->
 
@@ -135,21 +110,21 @@
 	                  <div class="bs-wizard-info text-center">Entrada</div>
 	                </div>
 	                
-	                <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+	                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
 	                  <div class="text-center bs-wizard-stepnum">Paso 2</div>
 	                  <div class="progress"><div class="progress-bar"></div></div>
 	                  <a href="paso2.html" class="bs-wizard-dot"></a>
 	                  <div class="bs-wizard-info text-center">Diagnóstico</div>
 	                </div>
 	                
-	                <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+	                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
 	                  <div class="text-center bs-wizard-stepnum">Paso 3</div>
 	                  <div class="progress"><div class="progress-bar"></div></div>
 	                  <a href="paso3.html" class="bs-wizard-dot"></a>
 	                  <div class="bs-wizard-info text-center">Cirugía</div>
 	                </div>
 	                
-	                <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+	                <div class="col-xs-3 bs-wizard-step active"><!-- active -->
 	                  <div class="text-center bs-wizard-stepnum">Paso 4</div>
 	                  <div class="progress"><div class="progress-bar"></div></div>
 	                  <a href="paso4.html" class="bs-wizard-dot"></a>
@@ -158,26 +133,20 @@
 	            </div>
     		</div>    
 
+            <!-- Next Page Button -->
 
-
-
-
-
-	        
-        
-        	<!-- Next Page Button -->
 			<div class="container col-xs-12 btn-next">
-				<a href="paso4.html" type="button" class="btn-entry btn-lg pull-right">Siguente Paso <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+				<a href="#" type="button" class="btn-entry btn-lg pull-right">Siguente Paso <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 			</div>
 
 
-
-			</div> <!-- Containter -->
+	</div> <!-- Containter -->
 		
-	</div>		
+	
    
 
-	    <!-- FireBase -->
+	<!-- FireBase -->
+
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 	<script>
 	    // Initialize Firebase

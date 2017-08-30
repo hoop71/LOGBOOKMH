@@ -763,7 +763,8 @@ label.radio-inline, label.radio-inline2 {
 .bs-wizard {margin-top: 40px;}
 
 .wizard { 
-padding: 0; }
+  padding: 0; 
+}
 
 /*Form Wizard*/
 .bs-wizard {
@@ -865,5 +866,117 @@ padding: 0; }
   pointer-events: none; 
 }
 /*END Form Wizard*/
+
+
+
+/* Stupud Fucking Simulation Button*/
+
+.search-pan { 
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  vertical-align: middle;
+}
+
+.search { 
+  color: #ffffff;
+}
+
+button.btn-search {
+  background-color: #185567;
+  color: #ffffff;
+  margin-bottom: 5px;
+  border: 1px solid #185567;
+}
+
+button.btn-search2 {
+  background-color: #185567;
+  color: #ffffff;
+  border-radius: 0;
+  margin-bottom: 5px;
+  border: 1px solid #185567;
+}
+
+.input-group-btn button.btn-search:active, .input-group-btn button.btn-search:hover {
+  background-color: #FFFFFF;
+  border-color: #185567;  
+  color: #185567;
+  margin-bottom: 5px;
+}
+
+input.form-control.search:hover { 
+  color: #185567;
+  background-color: #E3F6F4;
+}
+
+.input-group-btn input.search:active {
+  background-color: red;
+}
+
+input#searchDiag {
+  margin-top: 2px;
+  margin-left: -.5px;
+  border-bottom: 1px solid #185567;
+}
+
+input#searchCiru { 
+  margin-top: 2px;
+  margin-left: -3px;
+  border-bottom: 1px solid #185567;
+}
+
+.input-group-btn input{
+  border-radius: 0;
+  border-color: none;
+}
+
+.input-group-btn .btn-default:not(.btn-fill) {
+  border-color: #185567;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+  border: 1px solid red;
+}
+
+.switch-field label {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #185567;
+  color: #185567;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  box-sizing: border-box;
+  padding-left: 7px;
+  padding-right: 10px;
+  margin-left: -3px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:    all 0.1s ease-in-out;
+  -ms-transition:     all 0.1s ease-in-out;
+  -o-transition:      all 0.1s ease-in-out;
+  transition:         all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #00BCD4;
+  color: #FFFFFF;
+}
+
+span.input-group-btn.toggle label:hover:before {
+  background-color: #185567;
+  color: #FFFFFF;
+} 
+
+/* Data Grid */
+
+.data { 
+border: 1px solid red; }
+
 
 
