@@ -298,6 +298,7 @@ padding: 0;
   font-size: 1vw;
 }
 
+
 /*Media Small*/
 
 @media (max-width: 767px) {
@@ -359,13 +360,16 @@ body {
   color: #185567;
  }
 
-}
+
+
+} /* Close @media mobile */
 
 
 /* Media Tablet */
 
 @media (max-width: 978px) {
-  .navbar-transparent {
+
+.navbar-transparent {
   padding-top: 15px;
   background-color: rgba(0, 0, 0, 0.45);
 }
@@ -490,7 +494,8 @@ input.form-control:focus {
 .dropdown-toggle span.caret:hover { 
   color: #185567;
  }
-}
+
+} /* Close @media (max-width: 978px) */ 
 
 .section { 
   background-color: #FFFFFF;
@@ -625,7 +630,10 @@ padding: 0; }
   opacity: 1;
   transition: all .1s ease-in-out; 
   transform: scale(.97, .97);
-  border: 1.5px solid #A1CEEC; }
+  border: 1.5px solid #A1CEEC; 
+  filter: none;
+}
+
 
 
 
@@ -634,6 +642,7 @@ padding: 0; }
   transform: scale(.97, .97);
   border: 1.5px solid #00BCD4;
   transition: all .1s ease-in-out;
+  filter: none;
 }
 
 
@@ -662,6 +671,7 @@ padding: 0; }
   transition: all .1s ease-in-out; 
   transform: scale(.97, .97); 
   border: 1.5px solid #A1CEEC;
+  filter: none;
 }
 
 
@@ -671,10 +681,8 @@ padding: 0; }
   transform: scale(.97, .97);
   border: 1.5px solid #00BCD4;
   transition: all .1s ease-in-out;
-
+  filter: none;
 }
-
-
 
 
 /* Third Radio */
@@ -701,7 +709,9 @@ padding: 0; }
   opacity: 1;
   transition: all .1s ease-in-out; 
   transform: scale(.97, .97);
-  border: 1.5px solid #A1CEEC; }
+  border: 1.5px solid #A1CEEC; 
+  filter: none;
+}
 
 
 
@@ -710,36 +720,73 @@ padding: 0; }
   transform: scale(.97, .97);
   border: 1.5px solid #00BCD4;
   transition: all .1s ease-in-out;
+  filter: none;
 }
 
 
-/*div.nails.sur img { 
-  margin: auto;
-  margin-bottom: 1em;
-}*/
+/* Radio 4*/
+
+
+.radio-inline4 { 
+padding: 0; }
+
+.radio-inline4 input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  border: 1px solid red;
+
+}
+
+.radio-inline4 input + img{ /* IMAGE STYLES */
+  cursor: pointer;
+  border:2px solid transparent;
+  opacity: 0.6;
+}
+
+.radio-inline4 input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  transition: all .1s ease-in-out; 
+  transform: scale(.97, .97);
+  border: 1.5px solid #A1CEEC; 
+  filter: none;
+
+}
+
+
+
+.radio-inline4 input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+  filter: none;
+}
+
+
 
 div.nails label img { 
  display: block;
  margin-left: auto;
  margin-right: auto; 
+ filter: grayscale(100%);
 }
 
 /*.sur2 { 
   border: 1px solid red; }*/
 
 label.radio-inline, label.radio-inline2 { 
-  padding-top: 15px;
+/*  padding-top: 15px;*/
 /*  border: 1px solid red;
   border-radius: 15px;*/
 }
 
 .surg { 
   text-align: center;
-  width: 100%;
+  width: 5vw;
   height: auto; 
   background-size: cover;
-  background-position: center center;
-  max-width: 50%;
+
 }
 
 .btn-entrada { 
@@ -1018,17 +1065,18 @@ border: 1px solid red; }
 
 
 .datos { 
-  text-align: center;
+
   width: 100%;
   height: auto; 
   background-size: cover;
   background-position: center center;
-  max-width: 50%;
-  font-size: 1vw;
+  font-size: 14px;
+  text-align: center;
 }
 
 label.radiolabel.datos {
   margin-top: -10px;
+  font-size: 1em;
 }
 
 
@@ -1036,10 +1084,13 @@ label.radiolabel.datos {
 
 .surg2 { 
   text-align: center;
-  width: 100%;
+  width: 5vw;
   height: auto; 
   background-size: cover;
   background-position: center center;
+/*  margin-bottom: 20px;*/
   
 }
 
+img.datos.thumbnail { 
+filter: grayscale(100%);
