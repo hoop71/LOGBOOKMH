@@ -547,8 +547,6 @@ input.form-control:focus {
   background-color: #185567;
   min-width: 25%;
   margin-bottom: 10px;
-  margin-left: 1px;
-  margin-right: 1px;
   font-size: 14px;
   vertical-align: center;
 /*  display: flex; 
@@ -615,6 +613,7 @@ label {
 }
 
 label:not(:first-child) { 
+
   padding-bottom: 10px;
   padding-top: 10px;
  }
@@ -626,30 +625,96 @@ font-size: 16px;
 color: #FFFFFF;
 }
 
+/* First Radio */
+
+.radio-inline { 
+padding: 0; }
+
+.radio-inline input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  border: 1px solid red;
+
+}
+
+.radio-inline input + img{ /* IMAGE STYLES */
+  cursor: pointer;
+  border:2px solid transparent;
+  opacity: 0.6;
+
+}
+
+.radio-inline input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  transition: all .1s ease-in-out; 
+  transform: scale(.97, .97);
+  border: 1.5px solid #A1CEEC; 
+  filter: none;
+}
 
 
-/* Radio Psuedo */
+
+
+.radio-inline input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+  filter: none;
+}
+
+
+/* Second Radio */
+
+.radio-inline2 { 
+padding: 0; }
+
+.radio-inline2 input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  border: 1px solid red;
+
+}
+
+.radio-inline2 input + img{ /* IMAGE STYLES */
+  cursor: pointer;
+  border:2px solid transparent;
+  opacity: 0.7;
+
+}
+
+.radio-inline2 input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  transition: all .1s ease-in-out; 
+  transform: scale(.97, .97); 
+  border: 1.5px solid #A1CEEC;
+  filter: none;
+}
+
+
+
+.radio-inline2 input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+  filter: none;
+}
+
+
+/* Third Radio */
 
 .radio-inline3 { 
 padding: 0; }
 
-.radio-inline3 input[type=checkbox] {/* HIDE RADIO */
+.radio-inline3 input img[type=checkbox] {/* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
  /* border: 1px solid red;*/
 }
 
-.radio-inline3 input[type=checkbox]:not(:checked) {/* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
-  filter: grayscale(100%);
-}
-
-.radio-inline3 input[type=checkbox]:after:hover {/* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
-  filter: grayscale(100%);
-}
 
 .radio-inline3 input + img{ /* IMAGE STYLES */
   cursor: pointer;
@@ -659,7 +724,7 @@ padding: 0; }
 
 
 
-.radio-inline3 input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+.radio-inline3 input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
   opacity: 1;
   transform: scale(.97, .97);
   border: 1.5px solid #00BCD4;
@@ -667,8 +732,16 @@ padding: 0; }
   filter: none;
 }
 
+.radio-inline3 input:checked + img:active { /* (RADIO CHECKED) IMAGE STYLES */
+  opacity: 1;
+  transform: scale(.97, .97);
+  border: 1.5px solid #00BCD4;
+  transition: all .1s ease-in-out;
+  filter: grayscale(100%);
+}
 
-/* Radio Psuedo */
+
+/* Radio 4*/
 
 
 .radio-inline4 { 
@@ -680,6 +753,12 @@ padding: 0; }
   border: 1px solid red;
 }
 
+.radio-inline4 input[type=radio] {/* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  border: 1px solid red;
+
+}
 
 .radio-inline4 input + img{ /* IMAGE STYLES */
   cursor: pointer;
@@ -687,6 +766,15 @@ padding: 0; }
   opacity: 0.6;
 }
 
+.radio-inline4 input:hover + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  transition: all .1s ease-in-out; 
+  transform: scale(.97, .97);
+  border: 1.5px solid #A1CEEC; 
+  filter: none;
+
+}
 
 .radio-inline4 input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   opacity: 1;
@@ -695,9 +783,6 @@ padding: 0; }
   transition: all .1s ease-in-out;
   filter: none;
 }
-
-
-
 
 
 
@@ -1010,12 +1095,10 @@ border: 1px solid red; }
   text-align: center;
 }
 
-label.radiolabel.datos, label.radiolabel {
+label.radiolabel.datos {
   margin-top: -10px;
   font-size: 1em;
 }
-
-
 
 
 /*Faces Feelings*/
@@ -1032,6 +1115,3 @@ label.radiolabel.datos, label.radiolabel {
 
 img.datos.thumbnail { 
 filter: grayscale(100%);
-}
-
-
