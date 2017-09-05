@@ -1,6 +1,9 @@
 html, body { 
   font-family: 'Raleway', sans-serif;
- }
+  height: 100%;
+
+}
+
 
 .landing-alert {
   margin-bottom: 0;
@@ -23,6 +26,9 @@ h3.span {
 h6 { 
   font-size: 1rem;
  }
+
+ .row { 
+ margin: 0; }
 
 
 .landing-header {
@@ -313,6 +319,12 @@ body {
   font-size: 1vw;
 }
 
+.mainLogo.h3 { 
+
+font-size: 5vh; 
+
+}
+
 .register-card {
   background-color: #185567;
   border-radius: 8px;
@@ -380,7 +392,6 @@ body {
 }
 
 
-
 } /* Close @media mobile */
 
 
@@ -396,6 +407,12 @@ body {
 body {
   position: relative;
   font-size: 1vw;
+}
+
+.mainLogo.h3 { 
+
+font-size: 5vh; 
+
 }
 
 .register-card {
@@ -513,6 +530,8 @@ input.form-control:focus {
 .dropdown-toggle span.caret:hover { 
   color: #185567;
  }
+
+
 
 } /* Close @media (max-width: 978px) */ 
 
@@ -1018,7 +1037,7 @@ label.radiolabel.datos, label.radiolabel {
 
 
 
-/*Faces Feelings*/
+/* Faces Feelings */
 
 .surg2 { 
   text-align: center;
@@ -1033,5 +1052,102 @@ label.radiolabel.datos, label.radiolabel {
 img.datos.thumbnail { 
 filter: grayscale(100%);
 }
+
+
+/* Casa CSS */
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 { 
+  min-height: 100%;
+ }
+
+.bgimg-2 { 
+  min-height: 100%;
+  background-color: blue;
+}
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+.box1, .box2, .box3 {
+  background-color:transparent;
+  font-size: 110%;
+
+}
+
+.space1, .space2, .space3 {
+  position: relative;
+  color: #777;
+  text-align: center;
+  padding: 10px 50px;
+  background-color: #00BCD4;
+  text-align: justify;
+} 
+
+.space1 h2 { 
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; 
+  margin: 15px;
+  color: #ffffff;
+}
+
+.space1 span { 
+  color: #185567;
+ }
+
+.mainLogo {
+  margin-top: 20%;
+}
+
+.mainLogo h3 { 
+  font-size: 5vw;
+  font-weight: 800;
+ }
+
+.caption span.box2 {
+  background-color: #111;
+  color: #f7f7f7;
+  padding: 18px;
+
+}
+
+/* Apps Bar */
+
+.apps { 
+  border: 1px solid red;
+}
+
+.apps img { 
+
+  max-width: 50%;
+
+}
+
+
+
+
+
 
 
